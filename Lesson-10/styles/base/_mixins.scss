@@ -1,0 +1,44 @@
+@mixin bacground ($bc) {
+    background-color: $bc;
+}
+@mixin bacground-gradient-to-top ($start-color, $end-color) {
+    background-color: linear-gradient(to top $start-color $end-color);
+}
+@mixin transition($property, $duration) {
+    transition-property: $property;
+    transition-duration: $duration;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.twitter{
+    @include bacground ($twittwer-color);
+}
+.facebook{
+    @include bacground ($facebook-color);
+}
+.linkedin{
+    @include bacground ($linkedin-color);
+}
+.instagram{
+    @include bacground ($instagram-color);
+}
+.youtube{
+    @include bacground ($youtube-color);
+}
+.tumblr{
+    @include bacground ($tumblr-color);
+}
+.tribbble{
+    @include bacground ($tribbble-color);
+}
+// colors and bacgrounds
